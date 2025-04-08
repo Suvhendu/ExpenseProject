@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+.expense-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Consistent spacing between elements */
+    padding: 2rem;
+    background: linear-gradient(135deg, #a4508b, #5f0a87); /* Purple gradient */
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 2rem auto;
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #e0e0e0;
+    color: white; /* Adjust text color for better contrast */
+}
+
+.expense-form .form-header {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.expense-form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #e0e0e0; /* Softer white for labels */
+    font-size: 1rem;
+    display: block; /* Ensure labels are above inputs */
+}
+
+.expense-form input {
+    width: 100%;
+    padding: 0.77rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.expense-form input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+    outline: none;
+    background-color: #ffffff;
+}
+
+.expense-form button {
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #5f0a87, #a4508b); /* Purple gradient to match the container */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.expense-form button:hover {
+    background: linear-gradient(135deg, #a4508b, #5f0a87); /* Reverse gradient on hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.expense-form button:active {
+    background: #5f0a87; /* Solid purple for active state */
+    transform: scale(1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.expense-form .form-footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    margin-top: 1rem;
+}
+
+.expense-form .form-footer a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.expense-form .form-footer a:hover {
+    color: #45a049;
+}

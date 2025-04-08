@@ -1,0 +1,77 @@
+.expense-item {
+    display: flex;
+    align-items: center;
+    background-color: rgb(82, 6, 82);
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    padding: 1rem;
+    margin: 1rem 0;
+    color: #ccc;
+    transition: transform 0.2s;
+}
+
+.expense-item:hover {
+    transform: scale(1.02);
+}
+
+.expense-item__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 1rem;
+    flex: 1;
+}
+
+.expense-item__description h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0;
+}
+
+.expense-item__price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.expense-item__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font: inherit;
+    border: none;
+    border-radius: 6px;
+    background-color: #da542b; /* Green background */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 1rem;
+}
+
+button:hover {
+    background-color: #8e6938; /* Darker green on hover */
+    transform: translateY(-2px);
+}
+
+input {
+    padding: 0.5rem;
+    font: inherit;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-left: 1rem;
+    width: 200px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #4caf50; /* Green border on focus */
+    box-shadow: 0 0 6px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
