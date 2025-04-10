@@ -1,9 +1,10 @@
 import './App.css';
 import Expenses from './components/Expenses';
 import NewExpense from './components/New Expense/NewExpense';
+import { useState } from 'react';
 
 function App() {
-  let expenses = [
+  let manual_Data = [
     {
       title: "School Fees",
       amount: 500,
@@ -26,15 +27,15 @@ function App() {
     },
   ];
 
-  const addExpenseHandler = (expense) => {
-    const expenseData = {
-      ...expense
-    };
-    console.log(expenseData);
 
+ 
+  const [expenses, setExpenses] = useState(manual_Data);
+
+  const addExpenseHandler = (expense) => {  
+    
+    const final_data = [expense, ...manual_Data];
+    setExpenses(final_data);
   }
-
-
   return (
     <div className="App">
       <h2>Start adding expenses here....! </h2>
