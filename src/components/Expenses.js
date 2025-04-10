@@ -8,7 +8,7 @@ const Expenses = (props) => {
 
             {
                 props.item.map(
-                    expense => (
+                    expenses => (
                         <ExpenseItem
                             date={props.item[0].date}
                             title={props.item[0].title}
